@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  direction: rtl;
+}
+
+#main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#main-title {
+  font-size: 100px;
+  margin: 0;
+  color: #ff9a9e;
+}
+
+#main-content,
+#reply-content {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  margin-top: 20px;
+  width: 700px;
+}
+
+#main-content {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reply-content {
+  height: 400px;
+  overflow-y: auto;
+  color: black;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#word-input {
+  width: 500px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  padding: 0 20px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#submit-btn,
+#clear-btn {
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  margin: 0 10px;
+  width: 160px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#submit-btn {
+  background-color: #ff9a9e;
+  color: white;
+}
+
+#submit-btn:hover {
+  background-color: #ff7a7e;
+}
+
+#clear-btn {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+#clear-btn:hover {
+  background-color: #5a4acd;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #ff9a9e;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  color: #ff6b6b;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.history-section {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 700px;
+}
+
+.history-item {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
